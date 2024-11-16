@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functional bap er bank</title>
+    <!-- TAILWIND CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header class="text-center my-8">
+        <h1 class="text-5xl font-bold">Functional <span class="text-purple-400">Bap Er Bank !!!</span></h1>
+    </header>
+    <main>
+        <!-- viewer section of deposite & withdraw -->
+        <section>
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto mt-20">
+                <!-- box-1 -->
+                <div class="bg-pink-400 rounded-md text-white px-7 py-5">
+                    <h2 class="text-3xl font-medium">Deposite</h2>
+                    <h1 class="text-5xl font-bold">$<span id="deposite-total">00</span></h1>
+                </div>
+                <!-- box-2 -->
+                <div  class="bg-orange-400 rounded-md text-white px-7 py-5">
+                    <h2 class="text-3xl font-medium">Withdraw</h2>
+                    <h1 class="text-5xl font-semibold">$<span id="Withdraw-total">00</span></h1>
+                </div>
+                <!-- box-3 -->
+                <div class="bg-purple-500 rounded-md text-white px-7 py-5">
+                    <h2 class="text-3xl font-medium">Balence</h2>
+                    <h1 class="text-5xl font-semibold">$<span id="balence-total">2400</span></h1>
+                </div>
+                
+            </div>
+        </section>
+        <!-- input section of deposit & withdraw -->
+         <section>
+            <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto mt-10 text-white">
+                <!-- input fild box-1 -->
+                <div class=" bg-teal-400 px-6 py-6 rounded-md">
+                    <h1 class="text-3xl font-bold">Your Deposite</h1>
+                    <input id="deposite-fild" class="w-3/4 block mt-4 mb-4 px-5 py-2 rounded-sm text-black" placeholder="$ you want to deposite" type="text">
+                    <button id="deposite-btn" class="text-white px-6 py-2 bg-orange-600 hover:bg-orange-500 rounded-md">Deposite</button>
+                </div>
+                <!-- input fild box-2 -->
+                <div class=" bg-green-400 px-6 py-6 rounded-md">
+                    <h1 class="text-3xl font-bold">Your Withdraw</h1>
+                    <input id="withdraw-fild" class="w-3/4 block mt-4 mb-4 px-5 py-2 rounded-sm text-black" placeholder="$ you want to withdraw" type="text">
+                    <button id="withdraw-btn" class="text-white px-6 py-2 bg-orange-600 hover:bg-orange-500 rounded-md">Withdraw</button>
+                </div>
+                
+            </div>
+         </section>
+    </main>
+    <!-- js link section -->
+     <script src="js/utility.js"></script>
+     <script src="js/deposite.js"></script>
+     <script src="js/withdraw.js"></script>
+</body>
+</html>
